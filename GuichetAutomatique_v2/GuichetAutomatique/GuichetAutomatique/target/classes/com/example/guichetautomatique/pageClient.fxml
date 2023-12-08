@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="750.0" prefWidth="1200.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: #DADBDD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guichetautomatique.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="647.0" prefWidth="758.0" style="-fx-background-color: #E7E7E7;">
+         <children>
+            <Pane layoutX="29.0" layoutY="117.0" prefHeight="512.0" prefWidth="480.0" style="-fx-background-color: #F4F4F4;">
+               <children>
+                  <Label layoutX="445.0" layoutY="11.0" text="1234" />
+                  <Label layoutX="379.0" layoutY="11.0" text="Code Client:" />
+                  <Label layoutX="24.0" layoutY="50.0" text="info">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane layoutX="541.0" layoutY="116.0" prefHeight="512.0" prefWidth="602.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="156.0" layoutY="29.0" text="Opérations sur les compte">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="72.0" prefHeight="100.0" prefWidth="602.0" style="-fx-background-color: #F4F4F4;">
+                     <children>
+                        <Button fx:id="sceneDepot" layoutX="168.0" layoutY="20.0" mnemonicParsing="false" onAction="#depotClick" prefHeight="61.0" prefWidth="274.0" text="Depot" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="177.0" prefHeight="100.0" prefWidth="602.0" style="-fx-background-color: #F4F4F4;">
+                     <children>
+                        <Button fx:id="sceneRetrait" layoutX="168.0" layoutY="20.0" mnemonicParsing="false" onAction="#retraitClick" prefHeight="61.0" prefWidth="274.0" text="Retrait" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="283.0" prefHeight="100.0" prefWidth="602.0" style="-fx-background-color: #F4F4F4;">
+                     <children>
+                        <Button fx:id="sceneTransfert" layoutX="168.0" layoutY="20.0" mnemonicParsing="false" onAction="#transfertClick" prefHeight="61.0" prefWidth="274.0" text="Transfert" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="390.0" prefHeight="100.0" prefWidth="602.0" style="-fx-background-color: #F4F4F4;">
+                     <children>
+                        <Button fx:id="scenePayerFacture" layoutX="168.0" layoutY="20.0" mnemonicParsing="false" onAction="#payerFactureClick" prefHeight="61.0" prefWidth="274.0" text="Payer Facture" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutY="26.0" prefHeight="72.0" prefWidth="1158.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-21.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Chaarbi_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="423.0" layoutY="19.0" text="Informations Comptes">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="sceneQuitter" fitHeight="65.0" fitWidth="45.0" layoutX="1106.0" layoutY="11.0" onMouseClicked="#quitterClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@shutdown-icon-0.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</VBox>
